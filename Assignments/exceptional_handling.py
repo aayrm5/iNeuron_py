@@ -13,7 +13,9 @@ def DivideByZero(x,y):
  #Executing the function
  DivideByZero(5,0)
  
- """Integer cannot be divisible by 0"""
+ """
+ Output:
+ Integer cannot be divisible by 0"""
         
 
  # Problem 2
