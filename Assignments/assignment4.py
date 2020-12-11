@@ -79,7 +79,43 @@ Please enter your number: 4
 Output:
 ['Charminar', 'India', 'Hyderabad', 'Eiffel Tower']
 """
+
 # Problem 3
 """Write a Python program using function concept that maps list of words into a list of integers representing the lengths of the corresponding words . 
 Hint: If a list [ ab,cde,erty] is passed on to the python function output should come as [2,3,4] Here 2,3 and 4 are the lengths of the words in the list.
+"""
+def words_to_length():
+    list_words = list(input("Enter the list of words separated by comma :").split(','))
+    list_obj = [i.strip() for i in list_words]
+    return list(map(len, list_obj))
+
+#calling function
+words_to_length()
+"""
+i/p : ab,cde,erty,qwerty
+o/p : [2, 3, 4, 6] 
+"""
+
+# Problem 4
+"""
+Write a Python function which takes a character (i.e. a string of length 1) 
+and returns True if it is a vowel, False otherwise.
+"""
+def check_vowel():
+    l = input("Enter your character :")
+    print(l)
+    if len(l)==1:
+        vowels = ['a','e','i','o','u']
+        if l.lower() in vowels:
+            return True
+        else:
+            return False
+    else:
+        return "Enter single charecter to evaluate the if it is vowel or not"
+#Function execution
+check_vowel()
+
+"""
+i/p: q
+o/p: False
 """
